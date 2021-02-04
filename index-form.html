@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <style>
+    table, th, td {
+        border: 2px dotted blue;
+        border-collapse: collapse;
+    }
+    h1 {
+        color:red;
+    }
+    </style>
+    <title>Boba Order</title>
+</head>
+<body>
+    <h1>Table with Boba Orders</h1>
+    <br>
+    <table>
+        <tr>
+            <th>Drink Name</th>
+            <th>Size</th>
+            <th>Ice Level</th>
+            <th>Sugar Level</th>
+            <th>Topping</th>
+        </tr>
+        <tr>
+            <td>Oolong Milk Tea</td>
+            <td>M</td>
+            <td>50%</td>
+            <td>25%</td>
+            <td>Boba Original</td>
+        </tr>
+        <tr>
+            <td>Jasmine</td>
+            <td>L</td>
+            <td>25%</td>
+            <td>25%</td>
+            <td>Lychee Jelly</td>
+        </tr>
+        <tr>
+            <td>Mango Smoothie</td>
+            <td>L</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>Mango Star Jelly</td>
+        </tr>
+        <tr>
+            <td>Taro Milk Tea</td>
+            <td>L</td>
+            <td>25%</td>
+            <td>25%</td>
+            <td>Boba Original</td>
+        </tr>
+    </table>
+    <br>
+   <form action="https://www.w3schools.com/action_page.php">
+        <legend><h2><ins>Add a drink</ins></h2></legend>
+            <label for="drink">Drink:</label>
+            <input type="text" id="drink" name="drink" placeholder="Thirsty?">
+        <br><br>
+            <label for="size">Size:</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+        <br><br>
+            <label for="ice">Ice Level:</label>
+                <select id="ice" name="ice">
+                    <option value="100">100%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                    <option value="0">0%</option>
+               </select>
+        <br><br>
+            <label for="sugar">Sugar Level:</label>
+                <select id="sugar" name="sugar">
+                    <option value="100">100%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                    <option value="0">0%</option>
+                </select>
+        <br><br>
+            <label for=topping><ins>Topping</ins></label>
+        <br>
+            <input type="checkbox" id="topping1" name="topping1" value="boba">
+            <label for="topping1">Boba Original</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="lychee">
+            <label for="topping2">Lychee</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="mango">
+            <label for="topping3">Mango</label>
+        <br><br>
+  <strong><em>All finished?</em></strong>
+        <br><br>
+  Thank you!
+        <br><br>
+  <button>Place order</button>
+    </form> 
+</body>
+</html>
